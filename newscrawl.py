@@ -9,6 +9,7 @@ from screeninfo import get_monitors
 
 #number of seconds each headline will be displayed
 delay = 15
+txtscrl = .007
 
 def main():
     while True:
@@ -84,7 +85,7 @@ def scrolling(strng, rowlngth):
         else:
             print(letter, end='', flush = True)  #print letter
             scrlength += 1
-            time.sleep(.007)
+            time.sleep(txtscrl)
 
 
 request()                                                                       #getlink
